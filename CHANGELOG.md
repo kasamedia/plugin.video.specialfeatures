@@ -1,3 +1,9 @@
+== Release (Official) 3.0.2 (031718) ==
+* Fixed: Updating formatting to pep8
+
+== Release (Official) 3.0.1 (031718) ==
+* Fixed: Language formatting
+
 == Release (Official) 3.0.0 (031418) ==
 * Submitted to Official Kodi Repo
 
