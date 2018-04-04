@@ -1,6 +1,6 @@
 # plugin.video.specialfeatures
 
-[![](https://img.shields.io/badge/supports-kodi%2017%20|%2018-blue.svg)](https://forum.kodi.tv/showthread.php?tid=327042) [![GitHub release](https://img.shields.io/github/release/smitchell6879/plugin.video.specialfeatures.svg)](https://github.com/smitchell6879/plugin.video.specialfeatures/releases/latest) [![GitHub tag](https://img.shields.io/github/tag/smitchell6879/plugin.video.specialfeatures.svg)](https://github.com/smitchell6879/plugin.video.specialfeatures/releases) [![license](https://img.shields.io/github/license/smitchell6879/plugin.video.specialfeatures.svg)](https://github.com/smitchell6879/plugin.video.specialfeatures/blob/master/LICENSE)
+[![](https://img.shields.io/badge/supports-kodi%2017%20|%2018-blue.svg)](https://forum.kodi.tv/showthread.php?tid=327042) [![GitHub release](https://img.shields.io/github/release/evolvetv/plugin.video.specialfeatures.svg)](https://github.com/evolvetv/plugin.video.specialfeatures/releases/latest) [![GitHub tag](https://img.shields.io/github/tag/evolvetv/plugin.video.specialfeatures.svg)](https://github.com/evolvetv/plugin.video.specialfeatures/releases) [![license](https://img.shields.io/github/license/evolvetv/plugin.video.specialfeatures.svg)](https://github.com/evolvetv/plugin.video.specialfeatures/blob/master/LICENSE)
 
 ### Welcome!
 
@@ -33,7 +33,7 @@ This Extras folder can contain individual video clips, or full Blu-ray or DVD ri
 
 There are currently two ways to access Special Features. The 'builtin' method is to simply access the 'Special Features' addon directly. If any special features are available, they will be presented in a video list.
 
-While the long-term goal is to see every skin supporting Special Features natively, for now patches are available for many of the official skins in the [skin xml](https://github.com/smitchell6879/plugin.video.specialfeatures/tree/master/resources/skin%20xml/) directory. The following skins are currently supported, with more being added as time permits:
+While the long-term goal is to see every skin supporting Special Features natively, for now patches are available for many of the official skins in the [skin xml](https://github.com/evolvetv/plugin.video.specialfeatures/tree/master/resources/skin%20xml/) directory. The following skins are currently supported, with more being added as time permits:
 
 - [x] Aeon Nox Silvo
 - [x] Amber
@@ -89,9 +89,9 @@ We recommend all users with support questions comment on our [forum thread](http
 
 ## Contributions
 
-Anyone is welcome to contribute to Easy Digital Downloads. Please read the [guidelines for contributing](https://github.com/smitchell6879/plugin.video.specialfeatures/blob/master/CONTRIBUTING.md) to this repository.
+Anyone is welcome to contribute to Easy Digital Downloads. Please read the [guidelines for contributing](https://github.com/evolvetv/plugin.video.specialfeatures/blob/master/CONTRIBUTING.md) to this repository.
 
 There are various ways you can contribute:
 
-1. Raise an [Issue](https://github.com/smitchell6879/plugin.video.specialfeatures/issues) on GitHub
+1. Raise an [Issue](https://github.com/evolvetv/plugin.video.specialfeatures/issues) on GitHub
 2. Send us a Pull Request with your bug fixes and/or new features
