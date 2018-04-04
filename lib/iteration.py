@@ -305,7 +305,7 @@ class dbEnterExit:
             # Movies
             if self.item['tid'] is None:
                 info(QUERY().executeJSON('VideoLibrary.SetMovieDetails', {
-                     'movieid': self.item['mid'], "art": {'Special Features': self.flag}}))
+                     'movieid': self.item['mid'], "art": {'sflogo: self.flag}}))
                 self.entry = self.sql.exeCute('fw_movies', self.item['file'], 'one')
                 if self.entry is None:
                     self.input = (self.item['file'], self.item['title'],
@@ -320,7 +320,7 @@ class dbEnterExit:
             # TV Shows
             if self.item['mid'] is None:
                 info(QUERY().executeJSON('VideoLibrary.SetTVShowDetails', {
-                     'tvshowid': self.item['tid'], "art": {'Special Features': self.flag}}))
+                     'tvshowid': self.item['tid'], "art": {'sflogo: self.flag}}))
                 self.entry = self.sql.exeCute('fw_tvshows', self.item['file'], 'one')
                 if self.entry is None:
                     self.input = (self.item['file'], self.item['title'],
