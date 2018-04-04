@@ -281,9 +281,9 @@ class Views:
             self.litem.addContextMenuItems(
                 [('Manage...', 'RunScript(plugin.video.specialfeatures,editinfo)',)])
             self.litem.setContentLookup(True)
-            # xbmc.getCacheThumbName(self.f)
             self.litem.setProperty('IsPlayable', 'true')
-            xbmcplugin.addDirectoryItem(self.handle, self.f, self.litem, self.is_folder)
+            self.url = self.get_url(action='play', video=self.f)
+            xbmcplugin.addDirectoryItem(self.handle, self.url, self.litem, self.is_folder)
         xbmcplugin.setContent(self.handle, category)
         if len(self.files) > 1:
             if playall == 'true':
