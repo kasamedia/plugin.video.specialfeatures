@@ -79,6 +79,8 @@ dbdir = xbmc.translatePath(os.path.join(addir, "{}.db".format(dbName)))
 libdir = xbmc.translatePath(os.path.join(addonpath, 'lib'))
 resdir = xbmc.translatePath(os.path.join(addonpath, 'resources'))
 sqldir = xbmc.translatePath(os.path.join(libdir, 'pymysql'))
+flag = xbmc.translatePath(os.path.join(
+    resdir, os.path.join('media_flag', 'specialfeatures_flag.png')))
 
 sys.path.append(libdir)
 sys.path.append(resdir)

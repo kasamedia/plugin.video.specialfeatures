@@ -296,6 +296,7 @@ class dbEnterExit:
 
     def insertDb(self):
         self.cst = 1
+        self.flag = '{}'.format(flag)
         bgdc(lang(30000), lang(30051))
         for self.item in carList:
             self.pct = float(self.cst)/float(len(carList))*100
@@ -303,6 +304,8 @@ class dbEnterExit:
                 lang(30051), self.cst, lang(30052), len(carList)))
             # Movies
             if self.item['tid'] is None:
+                info(QUERY().executeJSON('VideoLibrary.SetMovieDetails', {
+                     'movieid': self.item['mid'], "art": {'Special Features': self.flag}}))
                 self.entry = self.sql.exeCute('fw_movies', self.item['file'], 'one')
                 if self.entry is None:
                     self.input = (self.item['file'], self.item['title'],
@@ -316,6 +319,8 @@ class dbEnterExit:
                     self.sql.exeCute('in_movies', self.input, 'com')
             # TV Shows
             if self.item['mid'] is None:
+                info(QUERY().executeJSON('VideoLibrary.SetTVShowDetails', {
+                     'tvshowid': self.item['tid'], "art": {'Special Features': self.flag}}))
                 self.entry = self.sql.exeCute('fw_tvshows', self.item['file'], 'one')
                 if self.entry is None:
                     self.input = (self.item['file'], self.item['title'],

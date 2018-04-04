@@ -45,6 +45,12 @@ class QUERY:
         self.result = self.jsonquery(self.queries.get('{}'.format(query)))
         return self.result
 
+    def executeJSON(self, method, params):
+        self.json = json.dumps(
+            {'jsonrpc': '2.0', 'method': method, 'params': params, 'id': 1})
+        self.result = json.loads(xbmc.executeJSONRPC(self.json))
+        return self.result
+
 
 class SQL:
     def mySql(self):
