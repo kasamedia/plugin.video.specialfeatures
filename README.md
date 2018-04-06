@@ -89,7 +89,7 @@ We recommend all users with support questions comment on our [forum thread](http
 
 ## Contributions
 
-Anyone is welcome to contribute to Easy Digital Downloads. Please read the [guidelines for contributing](https://github.com/evolvetv/plugin.video.specialfeatures/blob/master/CONTRIBUTING.md) to this repository.
+Anyone is welcome to contribute to Special Features. Please read the [guidelines for contributing](https://github.com/evolvetv/plugin.video.specialfeatures/blob/master/CONTRIBUTING.md) to this repository.
 
 There are various ways you can contribute:
 
