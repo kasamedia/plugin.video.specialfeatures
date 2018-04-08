@@ -78,8 +78,7 @@ if __name__ == '__main__':
             r.editInfo()
         elif sys.argv[1] == 'test':
             text(xbmc.getInfoLabel('ListItem.Property(PlayAll)'))
-            text(xbmc.getInfoLabel(
-                'String.StartsWith(Container.FolderPath,plugin://plugin.video.specialfeatures)'))
+            text(xbmc.getInfoLabel('String.StartsWith(Container.FolderPath,plugin://plugin.video.specialfeatures)'))
             text('Done')
     else:
         xbmc.executebuiltin('Addon.OpenSettings({})'.format(addonid))

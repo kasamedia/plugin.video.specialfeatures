@@ -79,24 +79,14 @@ class exPort_sfnfo:
             bgdc(lang(30000), lang(30064))
             for self.item in iterate:
                 self.pct = float(self.cst)/float(len(iterate))*100
-                bgdu(int(self.pct), lang(30000), "{0} {1}{2}{3}".format(
-                    lang(30064), self.cst, lang(30052), len(iterate)))
+                bgdu(int(self.pct), lang(30000), "{0} {1}{2}{3}".format(lang(30064), self.cst, lang(30052), len(iterate)))
                 try:
                     if mysql == 'true':
-                        self.buildTree(self.item['title'],
-                                       self.item['sorttitle'],
-                                       self.item['plot'],
-                                       os.path.splitext(
-                                       self.item['bpath'])[0]+'.sfnfo')
+                        self.buildTree(self.item['title'], self.item['sorttitle'], self.item['plot'], os.path.splitext(self.item['bpath'])[0]+'.sfnfo')
                     else:
-                        self.buildTree(self.item[1],
-                                       self.item[3],
-                                       self.item[4],
-                                       os.path.splitext(
-                                       self.item[2])[0]+'.sfnfo')
+                        self.buildTree(self.item[1], self.item[3], self.item[4], os.path.splitext(self.item[2])[0]+'.sfnfo')
                 except:
-                    error(
-                        'Could not write to file directory, check your write permissions')
+                    error('Could not write to file directory, check your write permissions')
                 self.cst += 1
             bgdcc()
         else:
@@ -109,24 +99,14 @@ class exPort_sfnfo:
                 else:
                     if xbmcvfs.exists(os.path.splitext(self.item[2])[0]+'.sfnfo') == 0:
                         self.pct = float(self.cst)/float(len(iterate))*100
-                    bgdu(int(self.pct), lang(30000), "{0} {1}{2}{3}".format(
-                        lang(30064), self.cst, lang(30052), len(iterate)))
+                    bgdu(int(self.pct), lang(30000), "{0} {1}{2}{3}".format(lang(30064), self.cst, lang(30052), len(iterate)))
                     try:
                         if mysql == 'true':
-                            self.buildTree(self.item['title'],
-                                           self.item['sorttitle'],
-                                           self.item['plot'],
-                                           os.path.splitext(
-                                           self.item['bpath'])[0]+'.sfnfo')
+                            self.buildTree(self.item['title'], self.item['sorttitle'], self.item['plot'], os.path.splitext(self.item['bpath'])[0]+'.sfnfo')
                         else:
-                            self.buildTree(self.item[1],
-                                           self.item[3],
-                                           self.item[4],
-                                           os.path.splitext(
-                                           self.item[2])[0]+'.sfnfo')
+                            self.buildTree(self.item[1], self.item[3], self.item[4], os.path.splitext(self.item[2])[0]+'.sfnfo')
                     except:
-                        error(
-                            'Could not write to file directory, check your write permissions')
+                        error('Could not write to file directory, check your write permissions')
                     self.cst += 1
             bgdcc()
 
@@ -136,10 +116,7 @@ class imPort_sfnfo:
         if self.checkout(path) == 1:
             initTree(self.path)
             self.vars()
-            return {'title': self.title,
-                    'path': path,
-                    'sorttitle': self.sorttitle,
-                    'plot': self.plot}
+            return {'title': self.title, 'path': path, 'sorttitle': self.sorttitle, 'plot': self.plot}
         else:
             return None
 
