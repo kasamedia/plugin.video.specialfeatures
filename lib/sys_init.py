@@ -79,6 +79,7 @@ dbdir = xbmc.translatePath(os.path.join(addir, "{}.db".format(dbName)))
 libdir = xbmc.translatePath(os.path.join(addonpath, 'lib'))
 resdir = xbmc.translatePath(os.path.join(addonpath, 'resources'))
 sqldir = xbmc.translatePath(os.path.join(libdir, 'pymysql'))
+flag = xbmc.translatePath(os.path.join(resdir, os.path.join('media_flag', 'specialfeatures_flag.png')))
 
 sys.path.append(libdir)
 sys.path.append(resdir)
@@ -113,7 +114,6 @@ trAsh = list()
 
 def info(txt):
     '''Something has happed, basic action tracker'''
-    # if isinstance(txt, str):
     txt = "{}".format(txt)
     message = u'%s: %s' % ("", txt)
     xbmc.log(msg=message, level=xbmc.LOGINFO)
@@ -121,7 +121,6 @@ def info(txt):
 
 def notice(txt):
     '''Something has happed, basic action tracker'''
-    # if isinstance(txt, str):
     txt = "{}".format(txt)
     message = u'%s: %s' % (addonid, txt)
     xbmc.log(msg=message, level=xbmc.LOGNOTICE)
@@ -129,7 +128,6 @@ def notice(txt):
 
 def warning(txt):
     '''Something bad happen may cause errors'''
-    # if isinstance(txt, str):
     txt = "{}".format(txt)
     message = u'%s: %s' % (addonid, txt)
     xbmc.log(msg=message, level=xbmc.LOGWARNING)
@@ -137,7 +135,6 @@ def warning(txt):
 
 def error(txt):
     '''addon is about to or has crashed this may be why'''
-    # if isinstance(txt, str):
     txt = "{}".format(txt)
     message = u'%s: %s' % (addonid, txt)
     xbmc.log(msg=message, level=xbmc.LOGERROR)
@@ -145,7 +142,6 @@ def error(txt):
 
 def debug(txt):
     '''In depth infomation about the status of addon'''
-    # if isinstance(txt, str):
     txt = "{}".format(txt)
     message = u'%s: %s' % (addonid, txt)
     xbmc.log(msg=message, level=xbmc.LOGDEBUG)
@@ -189,9 +185,9 @@ def exist():
     sys.exit(1)
 
 
-def testing(_list):
-    testing = open("{}".format(adtest), 'w')
-    for item in _list:
-        testing.write("{}".format(item))
-        testing.write("\n")
-    testing.close()
+# def testing(_list):
+#     testing = open("{}".format(adtest), 'w')
+#     for item in _list:
+#         testing.write("{}".format(item))
+#         testing.write("\n")
+#     testing.close()
