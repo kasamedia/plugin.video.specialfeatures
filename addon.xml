@@ -8,6 +8,9 @@ provider-name="smitchell6879, evertiro">
   <import addon="script.module.future" version="0.0.1"/>
   <import addon="script.module.pymysql" version="0.8.0"/>
 </requires>
+<extension point="xbmc.python.pluginsource" library="plugin.py">
+  <provides>video</provides>
+</extension>
 <extension point="kodi.context.item">
     <menu id="kodi.core.main">
       <item library="context.py">
@@ -18,9 +21,6 @@ provider-name="smitchell6879, evertiro">
 </extension>
 <extension point="xbmc.service" library="service.py" start="[login]"/>
 <extension point="xbmc.python.script" library="script.py"/>
-<extension point="xbmc.python.pluginsource" library="plugin.py">
-  <provides>video</provides>
-</extension>
 <extension point="xbmc.addon.metadata">
   <summary lang="en_GB">Given a properly structured 'Extras' directory, this addon will present all of the bonus media in your library.</summary>
   <description lang="en_GB">Special Features is inspired by the upcoming Blu-ray features being introduced in Kodi 18. Given a properly structured 'Extras' directory, this addon will present all of the bonus videos, discs and alternate versions of the movies and tv shows in your library.</description>
