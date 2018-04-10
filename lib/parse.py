@@ -88,7 +88,7 @@ def clear_cache():
 # decoding and encoding. If valid use cases are
 # presented, we may relax this by using latin-1
 # decoding internally for 3.3
-_implicit_encoding = 'ascii'
+_implicit_encoding = 'utf-8'
 _implicit_errors = 'strict'
 
 

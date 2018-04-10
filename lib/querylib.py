@@ -89,6 +89,8 @@ class SQL:
             self.sqLite()
             self.con = sqlite3.connect('{}'.format(dbdir))
             self.queries = Build().sqlite()
+
+        self.con.text_factory = lambda x: unicode(x, 'utf-8', 'ignore')
         global con
         con = self.con
         global cu
