@@ -33,22 +33,27 @@ This Extras folder can contain individual video clips, or full Blu-ray or DVD ri
 
 There are currently two ways to access Special Features. The 'builtin' method is to simply access the 'Special Features' addon directly. If any special features are available, they will be presented in a video list.
 
+The following skins currently provide official support for Special Features:
+
+- [x] AppTV
+- [x] Andromeda
+- [x] Black Glass Nova
+- [x] Chroma
+- [x] Nebula
+- [x] Rapier
+
 While the long-term goal is to see every skin supporting Special Features natively, for now patches are available for many of the official skins in the [skin xml](https://github.com/kasamedia/plugin.video.specialfeatures/tree/master/resources/skin%20xml/) directory. The following skins are currently supported, with more being added as time permits:
 
 - [x] Aeon Nox Silvo
 - [x] Amber
-- [x] AppTV
 - [x] Arctic Zephyr
 - [x] Bello 6
-- [x] Black Glass Nova
 - [x] Box
-- [x] Chroma
 - [x] Confluence
 - [x] Eminence 2
 - [x] Estuary
 - [x] FTV
 - [x] Fuse Neue
-- [x] Nebula
 
 If you use one of these skins, you can add a handy button to video info pages for videos with Special Features by overwriting the files in your skin folder with the supplied patches. Don't see a patch for your favorite skin? Feel free to request it (or submit it yourself)!
 
