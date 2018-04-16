@@ -1,3 +1,9 @@
+### Release (Official) 3.0.3 (041618) ###
+* Added: Support for custom thumbnails
+* Added: Special Features media flag
+* Fixed: UTF-8 filename support
+* Improved: Code quality
+
 ### Release (Official) 3.0.2 (031718) ###
 * Fixed: Updating formatting to pep8
 
