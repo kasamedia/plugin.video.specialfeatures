@@ -37,6 +37,7 @@ The following skins currently provide official support for Special Features:
 
 - [x] AppTV
 - [x] Andromeda
+- [x] Arctic: Zephyr
 - [x] Black Glass Nova
 - [x] Chroma
 - [x] Nebula
@@ -46,7 +47,6 @@ While the long-term goal is to see every skin supporting Special Features native
 
 - [x] Aeon Nox Silvo
 - [x] Amber
-- [x] Arctic Zephyr
 - [x] Bello 6
 - [x] Box
 - [x] Confluence
