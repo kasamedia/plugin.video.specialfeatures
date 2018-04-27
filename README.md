@@ -40,6 +40,7 @@ The following skins currently provide official support for Special Features:
 - [x] Arctic: Zephyr
 - [x] Black Glass Nova
 - [x] Chroma
+- [x] Eminence 2
 - [x] Nebula
 - [x] Rapier
 
@@ -50,7 +51,6 @@ While the long-term goal is to see every skin supporting Special Features native
 - [x] Bello 6
 - [x] Box
 - [x] Confluence
-- [x] Eminence 2
 - [x] Estuary
 - [x] FTV
 - [x] Fuse Neue
