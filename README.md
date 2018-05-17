@@ -41,6 +41,7 @@ The following skins currently provide official support for Special Features:
 - [x] Black Glass Nova
 - [x] Chroma
 - [x] Eminence 2
+- [x] Eminence 2 mod Krypton
 - [x] Nebula
 - [x] Rapier
 
