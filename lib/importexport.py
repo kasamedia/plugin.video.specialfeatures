@@ -29,8 +29,9 @@ from lib.sys_init import *
 
 
 def initTree(path):
+    f = xbmcvfs.File(path)
     global tree
-    tree = ET.parse(path)
+    tree = ET.parse(f)
     global root
     root = tree.getroot()
 
