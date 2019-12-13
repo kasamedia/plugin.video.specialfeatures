@@ -100,7 +100,7 @@ class exPort_sfnfo:
                 else:
                     if xbmcvfs.exists(os.path.splitext(self.item[2])[0]+'.sfnfo') == 0:
                         self.pct = float(self.cst)/float(len(iterate))*100
-                    bgdu(int(self.pct), lang(30000), "{0} {1}{2}{3}".format(lang(30064), self.cst, lang(30052), len(iterate)))
+                        bgdu(int(self.pct), lang(30000), "{0} {1}{2}{3}".format(lang(30064), self.cst, lang(30052), len(iterate)))
                     try:
                         if mysql == 'true':
                             self.buildTree(self.item['title'], self.item['sorttitle'], self.item['plot'], os.path.splitext(self.item['bpath'])[0]+'.sfnfo')
